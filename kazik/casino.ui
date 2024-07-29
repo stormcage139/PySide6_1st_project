@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Casino</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btn_kabinet">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>200</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Личный Кабинет</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_coinflip">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>0</y>
+      <width>200</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Coinflip</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_crash">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>0</y>
+      <width>200</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Crash</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_mines">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>0</y>
+      <width>200</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Mines</string>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>50</y>
+      <width>800</width>
+      <height>750</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>3</number>
+    </property>
+    <widget class="QWidget" name="kabinet_page">
+     <widget class="QLabel" name="bal_label">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>40</y>
+        <width>450</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="maxbal_label">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>220</y>
+        <width>450</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="maxwinstreak_coinflip">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>320</y>
+        <width>451</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="maxwinstreak_crash">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>410</y>
+        <width>451</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="maxwinstreak_mines">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>480</y>
+        <width>451</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="popolnenye_lineedit">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>720</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="popolnenye_btn">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>710</y>
+        <width>141</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Пополнить баланс</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="coinflip_page">
+     <widget class="QLabel" name="coinflip_gif">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>20</y>
+        <width>191</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ТУТ БУДЕТ ГИФКА</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="yourbet_coinflip_lineedit">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>250</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="yourbet_coinflip">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>210</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Введите ставку:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="headortail_label">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>250</y>
+        <width>301</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>тут результат броска</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="yourbal_coinflip">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>40</y>
+        <width>341</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>ТУТ ДОЛЖЕН БЫТЬ БАЛАНС</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_flipcoin">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>250</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Подбросить монетку</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="martingale_checkbox">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>310</y>
+        <width>111</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>MartinGale</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>317</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="automartingale_checkbox">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>310</y>
+        <width>121</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>AutoMartinGale</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="crash_page"/>
+    <widget class="QWidget" name="mines_page">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>190</y>
+        <width>221</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../../../Downloads/my_resources1.qrc">:/coinflip/PycharmProjects/OlymTasks/App/Dog.jpg</pixmap>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../../Downloads/my_resources1.qrc"/>
+ </resources>
+ <connections/>
+</ui>
